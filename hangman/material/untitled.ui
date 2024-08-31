@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QFrame" name="main_frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+        <widget class="QFrame" name="hak_sayi_frame">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#frame {
+border: 1px solid #4CAF50; /* Yeşil kenarlık */
+    border-radius: 5px; /* Kenarları yuvarlat */
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>10</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item alignment="Qt::AlignHCenter">
+           <widget class="QLabel" name="hak_saiyisi_lable">
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    color: #333; /* Koyu gri yazı rengi */
+    background-color: #f0f0f0; /* Hafif gri arka plan */
+    padding: 10px; /* İç dolgu */
+    font-size: 18px; /* Yazı boyutu */
+    font-weight: bold; /* Kalın yazı */
+    text-align: center; /* Yazıyı ortala */
+}</string>
+            </property>
+            <property name="text">
+             <string>KALAN HAK : </string>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignHCenter">
+           <widget class="QLabel" name="hak_sayisi">
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    color: #333; /* Koyu gri yazı rengi */
+    background-color: #f0f0f0; /* Hafif gri arka plan */
+    padding: 10px; /* İç dolgu */
+    font-size: 18px; /* Yazı boyutu */
+    font-weight: bold; /* Kalın yazı */
+    text-align: center; /* Yazıyı ortala */
+}</string>
+            </property>
+            <property name="text">
+             <string>200</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QFrame" name="tahminler_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="text">
+             <string>PushButton</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDial" name="dial"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 0, 0);
+font: 75 36pt &quot;MS Shell Dlg 2&quot;;</string>
+            </property>
+            <property name="text">
+             <string>_</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QFrame" name="tahmin_frame">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>10</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLineEdit" name="tahmin_linedit">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+    background-color: #f0f0f0; /* Hafif gri arka plan */
+    color: #333; /* Koyu gri yazı rengi */
+    border: 2px solid #4CAF50; /* Yeşil kenarlık */
+    padding: 8px; /* İç dolgu */
+    font-size: 16px; /* Yazı boyutu */
+    border-radius: 5px; /* Kenarları yuvarlat */
+}
+
+QLineEdit:focus {
+    border: 2px solid #45a049; /* Odaklanıldığında daha koyu yeşil kenarlık */
+    background-color: #e0e0e0; /* Daha koyu gri arka plan */
+}</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="tahmin_butonu">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #4CAF50; /* Yeşil arka plan rengi */
+    color: white; /* Beyaz yazı rengi */
+    border: none; /* Kenarlık yok */
+    padding: 10px 20px; /* İç dolgu */
+    text-align: center; /* Yazıyı ortala */
+    font-size: 16px; /* Yazı boyutu */
+    border-radius: 5px; /* Kenarları yuvarlat */
+}
+
+QPushButton:hover {
+    background-color: #45a049; /* Hover durumunda daha koyu yeşil */
+}
+
+QPushButton:pressed {
+    background-color: #388E3C; /* Tıklanınca daha koyu renk */
+    border: none;
+}</string>
+            </property>
+            <property name="text">
+             <string>TAHMIN ET</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
